@@ -1,0 +1,21 @@
+[package]
+name = "djed_rsx"
+version = "0.1.0"
+authors = ["Djedou <djedouarnaud.aman@gmail.com>"]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+djed_base64_util = { git = "https://github.com/djedou/djed_rsx_resources.git", default-features = false }
+quote = "0.3.15"
+regex = "0.2.2"
+djed_rsx_images = { git = "https://github.com/djedou/djed_rsx_resources.git", default-features = false }
+djed_rsx_parser = { git = "https://github.com/djedou/djed_rsx_parser.git", default-features = false }
+djed_rsx_stylesheet = { git = "https://github.com/djedou/djed_rsx_stylesheet.git", default-features = false }
+
+#[dev-dependencies]
+#rsx-dom = { git = "https://github.com/victorporof/rsx-dom.git", default-features = false, features = ["hashmap-arena"] }
+#rsx-fonts = { git = "https://github.com/victorporof/rsx-resources.git", default-features = false }
+#rsx-layout = { git = "https://github.com/victorporof/rsx-layout.git", default-features = false }
+#rsx-shared = { git = "https://github.com/victorporof/rsx-shared.git", default-features = false, features = ["impl-dummy"] }
